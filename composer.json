@@ -1,0 +1,26 @@
+{
+  "name": "lbbniu/lbbengine",
+  "description": "A development engine based on EvaEngine Framework",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "lbbniu",
+      "email": "lbbniu@gmail.com",
+      "homepage": "http://lbbniu.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.10",
+    "swiftmailer/swiftmailer": "v5.3.0",
+    "knplabs/gaufrette": "v0.1.8",
+    "evaengine/eva-sms": "0.1.*"
+  },
+  "suggest": {
+    "ext-redis": "*",
+    "ext-gearman": "*"
+  },
+  "autoload": {
+    "psr-4": {"Lbb\\": "src/Lbb"},
+    "files": ["src/Lbb/helpers.php"]
+  }
+}
